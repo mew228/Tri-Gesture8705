@@ -1,0 +1,111 @@
+[2026-03-21T14:47:58.542Z] TOKEN ACQUIRED
+[2026-03-21T14:47:58.546Z] Fetching: https://api.spotify.com/v1/search?q=Misery%20Business%20Paramore&type=track&limit=1
+[2026-03-21T14:47:58.554Z] TOKEN ACQUIRED
+[2026-03-21T14:47:58.557Z] Fetching: https://api.spotify.com/v1/search?q=The%20Only%20Exception%20Paramore&type=track&limit=1
+[2026-03-21T14:47:58.566Z] TOKEN ACQUIRED
+[2026-03-21T14:47:58.569Z] Fetching: https://api.spotify.com/v1/search?q=Still%20Into%20You%20Paramore&type=track&limit=1
+[2026-03-21T14:47:58.867Z] Spotify API error [403] @ /search?q=Still%20Into%20You%20Paramore&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:47:59.644Z] Spotify API error [403] @ /search?q=Misery%20Business%20Paramore&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:00.279Z] Spotify API error [403] @ /search?q=The%20Only%20Exception%20Paramore&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:01.156Z] TOKEN ACQUIRED
+[2026-03-21T14:48:01.159Z] Fetching: https://api.spotify.com/v1/search?q=Bring%20Me%20to%20Life%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:01.165Z] TOKEN ACQUIRED
+[2026-03-21T14:48:01.167Z] Fetching: https://api.spotify.com/v1/search?q=My%20Immortal%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:01.173Z] TOKEN ACQUIRED
+[2026-03-21T14:48:01.176Z] Fetching: https://api.spotify.com/v1/search?q=Going%20Under%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:01.331Z] Spotify API error [403] @ /search?q=Bring%20Me%20to%20Life%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:01.967Z] Spotify API error [403] @ /search?q=Going%20Under%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:02.584Z] Spotify API error [403] @ /search?q=My%20Immortal%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:13.173Z] TOKEN ACQUIRED
+[2026-03-21T14:48:13.176Z] Fetching: https://api.spotify.com/v1/search?q=Going%20Under%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:13.192Z] TOKEN ACQUIRED
+[2026-03-21T14:48:13.195Z] Fetching: https://api.spotify.com/v1/search?q=My%20Immortal%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:13.286Z] TOKEN ACQUIRED
+[2026-03-21T14:48:13.288Z] Fetching: https://api.spotify.com/v1/search?q=Bring%20Me%20to%20Life%20Evanescence&type=track&limit=1
+[2026-03-21T14:48:13.468Z] Spotify API error [403] @ /search?q=Going%20Under%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:14.078Z] Spotify API error [403] @ /search?q=My%20Immortal%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:14.567Z] Spotify API error [403] @ /search?q=Bring%20Me%20to%20Life%20Evanescence&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:15.348Z] TOKEN ACQUIRED
+[2026-03-21T14:48:15.351Z] Fetching: https://api.spotify.com/v1/search?q=Iris%20Goo%20Goo%20Dolls&type=track&limit=1
+[2026-03-21T14:48:15.550Z] Spotify API error [403] @ /search?q=Iris%20Goo%20Goo%20Dolls&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:16.230Z] TOKEN ACQUIRED
+[2026-03-21T14:48:16.233Z] Fetching: https://api.spotify.com/v1/search?q=Numb%20Linkin%20Park&type=track&limit=1
+[2026-03-21T14:48:16.243Z] TOKEN ACQUIRED
+[2026-03-21T14:48:16.247Z] Fetching: https://api.spotify.com/v1/search?q=Faint%20Linkin%20Park&type=track&limit=1
+[2026-03-21T14:48:16.299Z] TOKEN ACQUIRED
+[2026-03-21T14:48:16.302Z] Fetching: https://api.spotify.com/v1/search?q=In%20the%20End%20Linkin%20Park&type=track&limit=1
+[2026-03-21T14:48:16.401Z] Spotify API error [403] @ /search?q=Numb%20Linkin%20Park&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:16.909Z] Spotify API error [403] @ /search?q=Faint%20Linkin%20Park&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:17.384Z] Spotify API error [403] @ /search?q=In%20the%20End%20Linkin%20Park&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:18.700Z] TOKEN ACQUIRED
+[2026-03-21T14:48:18.704Z] Fetching: https://api.spotify.com/v1/search?q=Monster%20Exo&type=track&limit=1
+[2026-03-21T14:48:18.876Z] Spotify API error [403] @ /search?q=Monster%20Exo&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:20.053Z] TOKEN ACQUIRED
+[2026-03-21T14:48:20.056Z] Fetching: https://api.spotify.com/v1/search?q=Scar%20Tissue%20Red%20Hot%20Chili%20Peppers&type=track&limit=1
+[2026-03-21T14:48:20.065Z] TOKEN ACQUIRED
+[2026-03-21T14:48:20.069Z] Fetching: https://api.spotify.com/v1/search?q=Under%20the%20Bridge%20Red%20Hot%20Chili%20Peppers&type=track&limit=1
+[2026-03-21T14:48:20.224Z] Spotify API error [403] @ /search?q=Scar%20Tissue%20Red%20Hot%20Chili%20Peppers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:20.761Z] Spotify API error [403] @ /search?q=Under%20the%20Bridge%20Red%20Hot%20Chili%20Peppers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:21.247Z] TOKEN ACQUIRED
+[2026-03-21T14:48:21.249Z] Fetching: https://api.spotify.com/v1/search?q=Californication%20Red%20Hot%20Chili%20Peppers&type=track&limit=1
+[2026-03-21T14:48:21.425Z] Spotify API error [403] @ /search?q=Californication%20Red%20Hot%20Chili%20Peppers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:22.664Z] TOKEN ACQUIRED
+[2026-03-21T14:48:22.666Z] Fetching: https://api.spotify.com/v1/search?q=Custer%20Slipknot&type=track&limit=1
+[2026-03-21T14:48:22.839Z] Spotify API error [403] @ /search?q=Custer%20Slipknot&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:23.538Z] TOKEN ACQUIRED
+[2026-03-21T14:48:23.542Z] Fetching: https://api.spotify.com/v1/search?q=Helena%20My%20Chemical%20Romance&type=track&limit=1
+[2026-03-21T14:48:23.552Z] TOKEN ACQUIRED
+[2026-03-21T14:48:23.555Z] Fetching: https://api.spotify.com/v1/search?q=Welcome%20to%20the%20Black%20Parade%20My%20Chemical%20Romance&type=track&limit=1
+[2026-03-21T14:48:23.582Z] TOKEN ACQUIRED
+[2026-03-21T14:48:23.587Z] Fetching: https://api.spotify.com/v1/search?q=Teenagers%20My%20Chemical%20Romance&type=track&limit=1
+[2026-03-21T14:48:23.716Z] Spotify API error [403] @ /search?q=Helena%20My%20Chemical%20Romance&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:24.174Z] Spotify API error [403] @ /search?q=Teenagers%20My%20Chemical%20Romance&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:24.601Z] Spotify API error [403] @ /search?q=Welcome%20to%20the%20Black%20Parade%20My%20Chemical%20Romance&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:25.473Z] TOKEN ACQUIRED
+[2026-03-21T14:48:25.477Z] Fetching: https://api.spotify.com/v1/search?q=Carnival%20of%20the%20Animals%3A%20The%20Swan%20Camille%20Saint-Sa%C3%ABns&type=track&limit=1
+[2026-03-21T14:48:25.653Z] Spotify API error [403] @ /search?q=Carnival%20of%20the%20Animals%3A%20The%20Swan%20Camille%20Saint-Sa%C3%ABns&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:26.778Z] TOKEN ACQUIRED
+[2026-03-21T14:48:26.781Z] Fetching: https://api.spotify.com/v1/search?q=Ophelia%20The%20Lumineers&type=track&limit=1
+[2026-03-21T14:48:26.793Z] TOKEN ACQUIRED
+[2026-03-21T14:48:26.796Z] Fetching: https://api.spotify.com/v1/search?q=Stubborn%20Love%20The%20Lumineers&type=track&limit=1
+[2026-03-21T14:48:26.835Z] TOKEN ACQUIRED
+[2026-03-21T14:48:26.839Z] Fetching: https://api.spotify.com/v1/search?q=Ho%20Hey%20The%20Lumineers&type=track&limit=1
+[2026-03-21T14:48:26.943Z] Spotify API error [403] @ /search?q=Ophelia%20The%20Lumineers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:27.527Z] Spotify API error [403] @ /search?q=Stubborn%20Love%20The%20Lumineers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:48:28.146Z] Spotify API error [403] @ /search?q=Ho%20Hey%20The%20Lumineers&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:10.881Z] TOKEN ACQUIRED
+[2026-03-21T14:52:10.884Z] Fetching: https://api.spotify.com/v1/search?q=The%20One%20That%20Got%20Away%20Katy%20Perry&type=track&limit=1
+[2026-03-21T14:52:11.182Z] Spotify API error [403] @ /search?q=The%20One%20That%20Got%20Away%20Katy%20Perry&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:11.420Z] TOKEN ACQUIRED
+[2026-03-21T14:52:11.423Z] Fetching: https://api.spotify.com/v1/search?q=Rock%20Your%20Body%20Justin%20Timberlake&type=track&limit=1
+[2026-03-21T14:52:11.584Z] Spotify API error [403] @ /search?q=Rock%20Your%20Body%20Justin%20Timberlake&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:11.873Z] TOKEN ACQUIRED
+[2026-03-21T14:52:11.875Z] Fetching: https://api.spotify.com/v1/search?q=Love%20You%20Like%20a%20Love%20Song%20Selena%20Gomez%20%26%20the%20Scene&type=track&limit=1
+[2026-03-21T14:52:12.052Z] Spotify API error [403] @ /search?q=Love%20You%20Like%20a%20Love%20Song%20Selena%20Gomez%20%26%20the%20Scene&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:12.356Z] TOKEN ACQUIRED
+[2026-03-21T14:52:12.359Z] Fetching: https://api.spotify.com/v1/search?q=Love%20You%20Like%20a%20Love%20Song%20Selena%20Gomez%20%26%20the%20Scene&type=track&limit=1
+[2026-03-21T14:52:12.529Z] Spotify API error [403] @ /search?q=Love%20You%20Like%20a%20Love%20Song%20Selena%20Gomez%20%26%20the%20Scene&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:20.402Z] TOKEN ACQUIRED
+[2026-03-21T14:52:20.405Z] Fetching: https://api.spotify.com/v1/search?q=Obsesion%20Aventura&type=track&limit=1
+[2026-03-21T14:52:20.691Z] Spotify API error [403] @ /search?q=Obsesion%20Aventura&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:20.990Z] TOKEN ACQUIRED
+[2026-03-21T14:52:20.994Z] Fetching: https://api.spotify.com/v1/search?q=Lush%20Life%20Zara%20Larsson&type=track&limit=1
+[2026-03-21T14:52:21.168Z] Spotify API error [403] @ /search?q=Lush%20Life%20Zara%20Larsson&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:33.600Z] TOKEN ACQUIRED
+[2026-03-21T14:52:33.603Z] Fetching: https://api.spotify.com/v1/search?q=O.P.P%20Naughty%20By%20Nature&type=track&limit=1
+[2026-03-21T14:52:33.890Z] Spotify API error [403] @ /search?q=O.P.P%20Naughty%20By%20Nature&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:34.273Z] TOKEN ACQUIRED
+[2026-03-21T14:52:34.276Z] Fetching: https://api.spotify.com/v1/search?q=Please%20Me%20Cardi%20B&type=track&limit=1
+[2026-03-21T14:52:34.553Z] Spotify API error [403] @ /search?q=Please%20Me%20Cardi%20B&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:34.803Z] TOKEN ACQUIRED
+[2026-03-21T14:52:34.806Z] Fetching: https://api.spotify.com/v1/search?q=Monsta%20Culcha%20Candela&type=track&limit=1
+[2026-03-21T14:52:34.972Z] Spotify API error [403] @ /search?q=Monsta%20Culcha%20Candela&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:35.230Z] TOKEN ACQUIRED
+[2026-03-21T14:52:35.232Z] Fetching: https://api.spotify.com/v1/search?q=I%20Remain%20Calm%20The%20Roots&type=track&limit=1
+[2026-03-21T14:52:35.409Z] Spotify API error [403] @ /search?q=I%20Remain%20Calm%20The%20Roots&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:37.732Z] TOKEN ACQUIRED
+[2026-03-21T14:52:37.735Z] Fetching: https://api.spotify.com/v1/search?q=I%20Remain%20Calm%20The%20Roots&type=track&limit=1
+[2026-03-21T14:52:37.911Z] Spotify API error [403] @ /search?q=I%20Remain%20Calm%20The%20Roots&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
+[2026-03-21T14:52:38.275Z] TOKEN ACQUIRED
+[2026-03-21T14:52:38.279Z] Fetching: https://api.spotify.com/v1/search?q=I%20Like%20That%20Houston&type=track&limit=1
+[2026-03-21T14:52:38.591Z] Spotify API error [403] @ /search?q=I%20Like%20That%20Houston&type=track&limit=1: Active premium subscription required for the owner of the app. When the subscription status changes, it can take a few hours before requests are allowed again.
