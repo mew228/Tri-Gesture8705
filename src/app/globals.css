@@ -8,41 +8,51 @@
   --color-brand-secondary: #ec4899;
   --color-brand-accent: #06b6d4;
   
-  --animate-vinyl-spin: vinyl-spin 20s linear infinite;
-  --animate-pulse-subtle: pulse-subtle 3s ease-in-out infinite;
+  --animate-pulse-subtle: pulse-subtle 2.5s ease-in-out infinite;
 
-  @keyframes vinyl-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-  
   @keyframes pulse-subtle {
-    0%, 100% { opacity: 0.4; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.05); }
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 0.65; }
   }
 }
 
 :root {
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-blur: 16px;
+  --glass-blur: 12px;
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background: radial-gradient(circle at top right, #1a1a2e, #000);
-  min-height: 100vh;
+  background: #000;
   color: white;
   font-family: var(--font-inter), sans-serif;
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
   overflow: hidden;
-  touch-action: none;
+  /* Hint to browser that this is a GPU-composited surface */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Render text at native resolution on high-DPI */
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, .font-display {
   font-family: var(--font-outfit), sans-serif;
 }
 
+/* ─── Glass utilities ──────────────────────────────────────── */
 .glass-card {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
@@ -63,11 +73,89 @@ h1, h2, h3, .font-display {
   -webkit-text-fill-color: transparent;
 }
 
-/* Custom Hide Scrollbar */
-::-webkit-scrollbar {
-  display: none;
+/* ─── GPU Compositing ──────────────────────────────────────── */
+/*
+ * Only promote elements that are ACTUALLY animated to their own
+ * GPU layer. Indiscriminate will-change wastes VRAM.
+ */
+.gpu-layer {
+  /* Use transform: translateZ(0) ONLY when actually animating */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
-* {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+/* The drag/swipe card gets promoted once, stays on GPU */
+.swipe-card-composited {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  contain: layout style;
+}
+
+/* Background ambient layer — isolated repaint zone */
+.ambient-bg {
+  contain: strict;
+  will-change: opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ─── Album Art Quality ─────────────────────────────────────── */
+/*
+ * Force the browser to use high-quality bicubic resampling
+ * when scaling images. This is the main "rendering quality" fix.
+ */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  /* High quality downscaling — critical for album art */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Album art specifically: override crisp-edges for photos */
+.album-art {
+  image-rendering: auto;
+  /* Force high-DPI rendering on retina/120Hz displays */
+  -webkit-image-smoothing: high;
+}
+
+/* ─── Safe-area utilities ───────────────────────────────────── */
+.pt-safe { padding-top: max(20px, env(safe-area-inset-top)); }
+.pb-safe { padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+.pl-safe { padding-left: max(20px, env(safe-area-inset-left)); }
+.pr-safe { padding-right: max(20px, env(safe-area-inset-right)); }
+
+/* ─── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { display: none; }
+* { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Transitions fixed to compositor-only props ───────────── */
+/*
+ * Only animate opacity/transform — never width/height/background.
+ * This keeps animations off the main thread and achieves 120fps.
+ */
+.bg-crossfade {
+  transition: opacity 600ms ease-in-out;
+}
+
+/* ─── Active feedback — CSS instead of JS ──────────────────── */
+.btn-tap {
+  transition: transform 100ms ease, opacity 100ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-tap:active {
+  transform: scale(0.94) translateZ(0);
+  opacity: 0.8;
+}
+
+/* ─── Reduced Motion ─────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

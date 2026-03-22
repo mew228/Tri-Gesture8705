@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { TrackData } from '@/lib/discovery';
 
 const STORAGE_KEY = 'tri_gesture_liked_tracks';
@@ -31,9 +31,12 @@ export function useLikes() {
     });
   }, []);
 
+  // O(1) Set for isLiked lookups — avoids .some() array scan on every render
+  const likedSet = useMemo(() => new Set(likedTracks.map((t) => t.id)), [likedTracks]);
+
   const isLiked = useCallback(
-    (trackId: string) => likedTracks.some((t) => t.id === trackId),
-    [likedTracks]
+    (trackId: string) => likedSet.has(trackId),
+    [likedSet]
   );
 
   const removeLike = useCallback((trackId: string) => {

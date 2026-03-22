@@ -29,7 +29,7 @@ export async function searchItunes(
 
     // Abort after 4 seconds to prevent hanging the entire card load
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 4000);
+    const timer = setTimeout(() => controller.abort(), 5000);
 
     const res = await fetch(url, {
       signal: controller.signal,
@@ -50,9 +50,10 @@ export async function searchItunes(
 
     const best = data.results[0];
 
-    // iTunes gives 100x100, upgrade to 600x600
+    // iTunes gives 100x100 JPEG. Upgrade to 600x600 WebP for better
+    // compression and sharper rendering on high-DPI / 120Hz displays.
     const artwork = best.artworkUrl100
-      ? best.artworkUrl100.replace('100x100bb', '600x600bb')
+      ? best.artworkUrl100.replace('100x100bb', '600x600bb.webp')
       : null;
 
     const result: ItunesTrack = {
